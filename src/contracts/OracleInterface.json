@@ -1,0 +1,1906 @@
+{
+  "contractName": "OracleInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_eventId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "eventExists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPendingEvents",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllSportEvents",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_eventId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getEvent",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "participants",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "participantCount",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "date",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum OracleInterface.EventOutcome",
+          "name": "outcome",
+          "type": "uint8"
+        },
+        {
+          "internalType": "int8",
+          "name": "winner",
+          "type": "int8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_pending",
+          "type": "bool"
+        }
+      ],
+      "name": "getLatestEvent",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "participants",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "participantCount",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "date",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum OracleInterface.EventOutcome",
+          "name": "outcome",
+          "type": "uint8"
+        },
+        {
+          "internalType": "int8",
+          "name": "winner",
+          "type": "int8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "testConnection",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_eventId\",\"type\":\"bytes32\"}],\"name\":\"eventExists\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllSportEvents\",\"outputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"\",\"type\":\"bytes32[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_eventId\",\"type\":\"bytes32\"}],\"name\":\"getEvent\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"participants\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"participantCount\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"date\",\"type\":\"uint256\"},{\"internalType\":\"enum OracleInterface.EventOutcome\",\"name\":\"outcome\",\"type\":\"uint8\"},{\"internalType\":\"int8\",\"name\":\"winner\",\"type\":\"int8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"_pending\",\"type\":\"bool\"}],\"name\":\"getLatestEvent\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"participants\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"participantCount\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"date\",\"type\":\"uint256\"},{\"internalType\":\"enum OracleInterface.EventOutcome\",\"name\":\"outcome\",\"type\":\"uint8\"},{\"internalType\":\"int8\",\"name\":\"winner\",\"type\":\"int8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPendingEvents\",\"outputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"\",\"type\":\"bytes32[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"testConnection\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"The interface for the events Oracle (`BetOracle`)\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Declares the functions that the `BetOracle` contract exposes externally\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/eric/dev/alyra/project/bet-no-loss/contracts/OracleInterface.sol\":\"OracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/eric/dev/alyra/project/bet-no-loss/contracts/OracleInterface.sol\":{\"keccak256\":\"0xcf382941097a7fbd668df4d01572d90222d00ac7f10c74e0d96275fb2b16b8f0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4d6841d2152df1703657e54bc264810df770fd87009538fdb7cbe01c4ecc3925\",\"dweb:/ipfs/QmPvWKe5jnAkZeqKV3Ffut1ssQGsSodJZ3AT7DDZZCL6XW\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.4;\n\n/**\n * @title The interface for the events Oracle (`BetOracle`)\n * @notice Declares the functions that the `BetOracle` contract exposes externally\n */\ninterface OracleInterface {\n\n    /**\n     * @dev The possible outcomes for an event\n     * Keep in sync the `EventOutcome` constant in `betoracle.txt.js` when updating this enum.\n     */\n    enum EventOutcome {\n        Pending,    //match has not been fought to decision\n        Underway,   //match has started & is underway\n        Draw,       //anything other than a clear winner (e.g. cancelled)\n        Decided     //index of participant who is the winner \n    }\n\n    function eventExists(bytes32 _eventId)\n        external view returns (bool);\n    \n    function getPendingEvents() \n        external view returns (bytes32[] memory);\n\n    function getAllSportEvents() \n        external view returns (bytes32[] memory);\n\n    function getEvent(bytes32 _eventId) \n        external view returns (\n            bytes32       id,\n            string memory name, \n            string memory participants,\n            uint8         participantCount,\n            uint          date, \n            EventOutcome  outcome, \n            int8          winner\n        );\n\n    function getLatestEvent(bool _pending) \n        external view returns (\n            bytes32       id,\n            string memory name, \n            string memory participants,\n            uint8          participantCount,\n            uint          date, \n            EventOutcome  outcome, \n            int8          winner\n        );\n\n    function testConnection() \n        external pure returns (bool);\n\n}",
+  "sourcePath": "/Users/eric/dev/alyra/project/bet-no-loss/contracts/OracleInterface.sol",
+  "ast": {
+    "absolutePath": "/Users/eric/dev/alyra/project/bet-no-loss/contracts/OracleInterface.sol",
+    "exportedSymbols": {
+      "OracleInterface": [
+        1105
+      ]
+    },
+    "id": 1106,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1034,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1035,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:150:2",
+          "text": " @title The interface for the events Oracle (`BetOracle`)\n @notice Declares the functions that the `BetOracle` contract exposes externally"
+        },
+        "fullyImplemented": false,
+        "id": 1105,
+        "linearizedBaseContracts": [
+          1105
+        ],
+        "name": "OracleInterface",
+        "nameLocation": "218:15:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "OracleInterface.EventOutcome",
+            "id": 1040,
+            "members": [
+              {
+                "id": 1036,
+                "name": "Pending",
+                "nameLocation": "427:7:2",
+                "nodeType": "EnumValue",
+                "src": "427:7:2"
+              },
+              {
+                "id": 1037,
+                "name": "Underway",
+                "nameLocation": "487:8:2",
+                "nodeType": "EnumValue",
+                "src": "487:8:2"
+              },
+              {
+                "id": 1038,
+                "name": "Draw",
+                "nameLocation": "541:4:2",
+                "nodeType": "EnumValue",
+                "src": "541:4:2"
+              },
+              {
+                "id": 1039,
+                "name": "Decided",
+                "nameLocation": "615:7:2",
+                "nodeType": "EnumValue",
+                "src": "615:7:2"
+              }
+            ],
+            "name": "EventOutcome",
+            "nameLocation": "404:12:2",
+            "nodeType": "EnumDefinition",
+            "src": "399:275:2"
+          },
+          {
+            "functionSelector": "118e58bd",
+            "id": 1047,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "eventExists",
+            "nameLocation": "689:11:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1043,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1042,
+                  "mutability": "mutable",
+                  "name": "_eventId",
+                  "nameLocation": "709:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1047,
+                  "src": "701:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1041,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "700:18:2"
+            },
+            "returnParameters": {
+              "id": 1046,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1045,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1047,
+                  "src": "750:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1044,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "750:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "749:6:2"
+            },
+            "scope": 1105,
+            "src": "680:76:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "b4184e70",
+            "id": 1053,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPendingEvents",
+            "nameLocation": "775:16:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1048,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "791:2:2"
+            },
+            "returnParameters": {
+              "id": 1052,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1051,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1053,
+                  "src": "826:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1049,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "826:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 1050,
+                    "nodeType": "ArrayTypeName",
+                    "src": "826:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "825:18:2"
+            },
+            "scope": 1105,
+            "src": "766:78:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a717e89a",
+            "id": 1059,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllSportEvents",
+            "nameLocation": "859:17:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1054,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "876:2:2"
+            },
+            "returnParameters": {
+              "id": 1058,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1057,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1059,
+                  "src": "911:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1055,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "911:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 1056,
+                    "nodeType": "ArrayTypeName",
+                    "src": "911:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "910:18:2"
+            },
+            "scope": 1105,
+            "src": "850:79:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "8c172fa2",
+            "id": 1079,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEvent",
+            "nameLocation": "944:8:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1062,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1061,
+                  "mutability": "mutable",
+                  "name": "_eventId",
+                  "nameLocation": "961:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "953:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1060,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "953:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "952:18:2"
+            },
+            "returnParameters": {
+              "id": 1078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1064,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1030:2:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1016:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1063,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1016:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1066,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1060:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1046:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1065,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1046:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1068,
+                  "mutability": "mutable",
+                  "name": "participants",
+                  "nameLocation": "1093:12:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1079:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1067,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1079:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1070,
+                  "mutability": "mutable",
+                  "name": "participantCount",
+                  "nameLocation": "1133:16:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1119:30:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1069,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1119:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1072,
+                  "mutability": "mutable",
+                  "name": "date",
+                  "nameLocation": "1177:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1163:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1071,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1163:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1075,
+                  "mutability": "mutable",
+                  "name": "outcome",
+                  "nameLocation": "1210:7:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1196:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                    "typeString": "enum OracleInterface.EventOutcome"
+                  },
+                  "typeName": {
+                    "id": 1074,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1073,
+                      "name": "EventOutcome",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1040,
+                      "src": "1196:12:2"
+                    },
+                    "referencedDeclaration": 1040,
+                    "src": "1196:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                      "typeString": "enum OracleInterface.EventOutcome"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1077,
+                  "mutability": "mutable",
+                  "name": "winner",
+                  "nameLocation": "1246:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1232:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 1076,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1232:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:260:2"
+            },
+            "scope": 1105,
+            "src": "935:328:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "29e54269",
+            "id": 1099,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestEvent",
+            "nameLocation": "1278:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1082,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1081,
+                  "mutability": "mutable",
+                  "name": "_pending",
+                  "nameLocation": "1298:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1293:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1080,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1293:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1292:15:2"
+            },
+            "returnParameters": {
+              "id": 1098,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1084,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1367:2:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1353:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1083,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1353:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1086,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1397:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1383:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1085,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1383:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1088,
+                  "mutability": "mutable",
+                  "name": "participants",
+                  "nameLocation": "1430:12:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1416:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1087,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1416:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1090,
+                  "mutability": "mutable",
+                  "name": "participantCount",
+                  "nameLocation": "1471:16:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1456:31:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1089,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1456:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1092,
+                  "mutability": "mutable",
+                  "name": "date",
+                  "nameLocation": "1515:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1501:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1091,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1501:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1095,
+                  "mutability": "mutable",
+                  "name": "outcome",
+                  "nameLocation": "1548:7:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1534:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                    "typeString": "enum OracleInterface.EventOutcome"
+                  },
+                  "typeName": {
+                    "id": 1094,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1093,
+                      "name": "EventOutcome",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1040,
+                      "src": "1534:12:2"
+                    },
+                    "referencedDeclaration": 1040,
+                    "src": "1534:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                      "typeString": "enum OracleInterface.EventOutcome"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1097,
+                  "mutability": "mutable",
+                  "name": "winner",
+                  "nameLocation": "1584:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1570:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 1096,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1570:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1339:261:2"
+            },
+            "scope": 1105,
+            "src": "1269:332:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "3412a15c",
+            "id": 1104,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testConnection",
+            "nameLocation": "1616:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1630:2:2"
+            },
+            "returnParameters": {
+              "id": 1103,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1102,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1104,
+                  "src": "1665:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1101,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1665:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1664:6:2"
+            },
+            "scope": 1105,
+            "src": "1607:64:2",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1106,
+        "src": "208:1466:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1642:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/eric/dev/alyra/project/bet-no-loss/contracts/OracleInterface.sol",
+    "exportedSymbols": {
+      "OracleInterface": [
+        1105
+      ]
+    },
+    "id": 1106,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1034,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1035,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:150:2",
+          "text": " @title The interface for the events Oracle (`BetOracle`)\n @notice Declares the functions that the `BetOracle` contract exposes externally"
+        },
+        "fullyImplemented": false,
+        "id": 1105,
+        "linearizedBaseContracts": [
+          1105
+        ],
+        "name": "OracleInterface",
+        "nameLocation": "218:15:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "OracleInterface.EventOutcome",
+            "id": 1040,
+            "members": [
+              {
+                "id": 1036,
+                "name": "Pending",
+                "nameLocation": "427:7:2",
+                "nodeType": "EnumValue",
+                "src": "427:7:2"
+              },
+              {
+                "id": 1037,
+                "name": "Underway",
+                "nameLocation": "487:8:2",
+                "nodeType": "EnumValue",
+                "src": "487:8:2"
+              },
+              {
+                "id": 1038,
+                "name": "Draw",
+                "nameLocation": "541:4:2",
+                "nodeType": "EnumValue",
+                "src": "541:4:2"
+              },
+              {
+                "id": 1039,
+                "name": "Decided",
+                "nameLocation": "615:7:2",
+                "nodeType": "EnumValue",
+                "src": "615:7:2"
+              }
+            ],
+            "name": "EventOutcome",
+            "nameLocation": "404:12:2",
+            "nodeType": "EnumDefinition",
+            "src": "399:275:2"
+          },
+          {
+            "functionSelector": "118e58bd",
+            "id": 1047,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "eventExists",
+            "nameLocation": "689:11:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1043,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1042,
+                  "mutability": "mutable",
+                  "name": "_eventId",
+                  "nameLocation": "709:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1047,
+                  "src": "701:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1041,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "700:18:2"
+            },
+            "returnParameters": {
+              "id": 1046,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1045,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1047,
+                  "src": "750:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1044,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "750:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "749:6:2"
+            },
+            "scope": 1105,
+            "src": "680:76:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "b4184e70",
+            "id": 1053,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPendingEvents",
+            "nameLocation": "775:16:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1048,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "791:2:2"
+            },
+            "returnParameters": {
+              "id": 1052,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1051,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1053,
+                  "src": "826:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1049,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "826:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 1050,
+                    "nodeType": "ArrayTypeName",
+                    "src": "826:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "825:18:2"
+            },
+            "scope": 1105,
+            "src": "766:78:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a717e89a",
+            "id": 1059,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllSportEvents",
+            "nameLocation": "859:17:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1054,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "876:2:2"
+            },
+            "returnParameters": {
+              "id": 1058,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1057,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1059,
+                  "src": "911:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1055,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "911:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 1056,
+                    "nodeType": "ArrayTypeName",
+                    "src": "911:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "910:18:2"
+            },
+            "scope": 1105,
+            "src": "850:79:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "8c172fa2",
+            "id": 1079,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEvent",
+            "nameLocation": "944:8:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1062,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1061,
+                  "mutability": "mutable",
+                  "name": "_eventId",
+                  "nameLocation": "961:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "953:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1060,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "953:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "952:18:2"
+            },
+            "returnParameters": {
+              "id": 1078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1064,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1030:2:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1016:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1063,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1016:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1066,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1060:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1046:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1065,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1046:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1068,
+                  "mutability": "mutable",
+                  "name": "participants",
+                  "nameLocation": "1093:12:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1079:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1067,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1079:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1070,
+                  "mutability": "mutable",
+                  "name": "participantCount",
+                  "nameLocation": "1133:16:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1119:30:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1069,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1119:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1072,
+                  "mutability": "mutable",
+                  "name": "date",
+                  "nameLocation": "1177:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1163:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1071,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1163:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1075,
+                  "mutability": "mutable",
+                  "name": "outcome",
+                  "nameLocation": "1210:7:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1196:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                    "typeString": "enum OracleInterface.EventOutcome"
+                  },
+                  "typeName": {
+                    "id": 1074,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1073,
+                      "name": "EventOutcome",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1040,
+                      "src": "1196:12:2"
+                    },
+                    "referencedDeclaration": 1040,
+                    "src": "1196:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                      "typeString": "enum OracleInterface.EventOutcome"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1077,
+                  "mutability": "mutable",
+                  "name": "winner",
+                  "nameLocation": "1246:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1079,
+                  "src": "1232:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 1076,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1232:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:260:2"
+            },
+            "scope": 1105,
+            "src": "935:328:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "29e54269",
+            "id": 1099,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestEvent",
+            "nameLocation": "1278:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1082,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1081,
+                  "mutability": "mutable",
+                  "name": "_pending",
+                  "nameLocation": "1298:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1293:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1080,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1293:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1292:15:2"
+            },
+            "returnParameters": {
+              "id": 1098,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1084,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1367:2:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1353:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1083,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1353:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1086,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1397:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1383:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1085,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1383:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1088,
+                  "mutability": "mutable",
+                  "name": "participants",
+                  "nameLocation": "1430:12:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1416:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1087,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1416:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1090,
+                  "mutability": "mutable",
+                  "name": "participantCount",
+                  "nameLocation": "1471:16:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1456:31:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1089,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1456:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1092,
+                  "mutability": "mutable",
+                  "name": "date",
+                  "nameLocation": "1515:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1501:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1091,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1501:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1095,
+                  "mutability": "mutable",
+                  "name": "outcome",
+                  "nameLocation": "1548:7:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1534:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                    "typeString": "enum OracleInterface.EventOutcome"
+                  },
+                  "typeName": {
+                    "id": 1094,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1093,
+                      "name": "EventOutcome",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1040,
+                      "src": "1534:12:2"
+                    },
+                    "referencedDeclaration": 1040,
+                    "src": "1534:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_EventOutcome_$1040",
+                      "typeString": "enum OracleInterface.EventOutcome"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1097,
+                  "mutability": "mutable",
+                  "name": "winner",
+                  "nameLocation": "1584:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "1570:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  },
+                  "typeName": {
+                    "id": 1096,
+                    "name": "int8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1570:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1339:261:2"
+            },
+            "scope": 1105,
+            "src": "1269:332:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "3412a15c",
+            "id": 1104,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testConnection",
+            "nameLocation": "1616:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1630:2:2"
+            },
+            "returnParameters": {
+              "id": 1103,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1102,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1104,
+                  "src": "1665:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1101,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1665:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1664:6:2"
+            },
+            "scope": 1105,
+            "src": "1607:64:2",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1106,
+        "src": "208:1466:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1642:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-05-07T09:51:08.535Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "The interface for the events Oracle (`BetOracle`)",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "Declares the functions that the `BetOracle` contract exposes externally",
+    "version": 1
+  }
+}
